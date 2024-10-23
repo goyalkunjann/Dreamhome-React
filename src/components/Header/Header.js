@@ -17,10 +17,6 @@ const Header = () => {
           <li>Contact</li>
         </ul>
       </div>
-      <div className="button-container">
-        <div className="button-login">Log In</div>
-        <div className="button-touch">Get In Touch</div>
-      </div>
     </div>
   );
 };

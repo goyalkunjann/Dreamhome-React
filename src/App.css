@@ -1,27 +1,30 @@
-/* Global media queries */
-/* Ensure every component except the header has a left and right margin of 20px */
-
-
-@media (max-width: 768px) {
-  /* General rules for mobile devices */
-  .container {
-    padding: 10px;
-  }
-
-  .stats-container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-  }
-
-  .stat-item {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
+/* Global settings */
+* {
+  box-sizing: border-box; /* Include padding and borders in the element's total width */
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Fixed max width to avoid unpredictable resizing */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px;
+}
+
+/* General heading styles */
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* General responsive handling */
+@media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 0 15px; /* Keep slight padding on mobile */
   }
 }

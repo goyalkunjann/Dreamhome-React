@@ -1,86 +1,107 @@
 .customsteps-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 10px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .heading {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 14px;
-    align-items: flex-start;
-  }
-  
-  .heading h1 {
-    margin-left: 0;
-    font-size: 2.5rem;
-    font-weight: 600;
-    flex: 1;
-    text-align: left;
-    line-height: 1.2;
-  }
-  
-  .heading h1 span {
-    display: block; 
-    margin-top: 10px; 
-    color: #767676;
-  }
-  
-  .heading p {
-    flex: 1;
-    font-weight: 300;
-    color: #767676;
-    margin-top: 34px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: left;
-    max-width: 450px;
-    margin-right: 0;
-  }
-  
-  .step-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .step-icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #767676;
-  }
-  
-  .step-text {
-    font-size: 1rem;
-    font-weight: 500;
-  }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+}
 
-  /* Mobile-specific styles */
+.heading {
+  display: flex;
+  flex-direction: row; /* Row layout for large screens */
+  justify-content: center;
+  gap: 240px;
+  align-items: center;
+  text-align: left;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.heading h1 span {
+  display: block;
+  margin-top: 10px;
+  color: #767676;
+}
+
+.heading p {
+  font-weight: 300;
+  color: #767676;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 450px;
+}
+
+.step-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Set fixed width for circles */
+  height: 150px; /* Set fixed height for circles */
+  background-color: #f1f1f1;
+  border-radius: 50%; /* Make it a circle */
+  text-align: center;
+  padding: 20px;
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #767676;
+}
+
+.step-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Mobile-specific styles */
 @media (max-width: 768px) {
+  .heading {
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    text-align: center; /* Center align text on mobile */
+    gap: 20px;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    margin-top: 10px;
+    max-width: 90%;
+  }
+
   .step-container {
-    flex-direction: column;
-    align-items: center; /* Center the steps vertically */
+    flex-direction: column; /* Stack steps vertically on mobile */
+    align-items: center;
   }
 
   .step {
-    width: 80px;
-    height: 80px;
+    width: 100px; /* Smaller circles for mobile */
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Ensure circles are still circular */
+  }
+
+  .step-icon {
+    font-size: 1.5rem; /* Smaller icon for mobile */
+  }
+
+  .step-text {
+    font-size: 0.9rem; /* Smaller text size for mobile */
   }
 }
-  

@@ -9,14 +9,7 @@ const Home = () => {
         <img src={home} alt='Home constructor' />
         <h1>#1 Home constructor in India</h1>
         <h2>Innovative Modular Homes <br /> for the Future Generation</h2>
-        <div className='button-container'>
-          <div className='button-getin'>
-            Get In Touch
-          </div>
-          <div className='button-services'>
-            Our Services
-          </div>
-        </div>
+       
       </div>
 
       {/* Section for headings and descriptions */}
