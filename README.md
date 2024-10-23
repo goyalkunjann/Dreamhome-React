@@ -2,7 +2,7 @@
 
 Welcome to **Dream Home**, a modern, single-page web application designed to showcase innovative home construction and interior design services. This project is focused on creating a seamless user experience with a clean, responsive frontend using modern web technologies.
 
-![Dream Home](./path-to-screenshot.png)
+
 
 ## Table of Contents
 - [Overview](#overview)
