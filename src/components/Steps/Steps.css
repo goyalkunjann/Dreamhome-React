@@ -1,0 +1,86 @@
+.customsteps-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14px;
+    align-items: flex-start;
+  }
+  
+  .heading h1 {
+    margin-left: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    flex: 1;
+    text-align: left;
+    line-height: 1.2;
+  }
+  
+  .heading h1 span {
+    display: block; 
+    margin-top: 10px; 
+    color: #767676;
+  }
+  
+  .heading p {
+    flex: 1;
+    font-weight: 300;
+    color: #767676;
+    margin-top: 34px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 450px;
+    margin-right: 0;
+  }
+  
+  .step-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .step-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #767676;
+  }
+  
+  .step-text {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* Mobile-specific styles */
+@media (max-width: 768px) {
+  .step-container {
+    flex-direction: column;
+    align-items: center; /* Center the steps vertically */
+  }
+
+  .step {
+    width: 80px;
+    height: 80px;
+  }
+}
+  
