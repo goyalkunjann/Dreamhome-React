@@ -8,7 +8,6 @@ import craft4 from "../../assets/craft4.png";
 import craft5 from "../../assets/craft5.png";
 import craft6 from "../../assets/craft6.png";
 
-
 export const Section = () => {
   const images = [
     { src: craft1, text: "Design" },
@@ -29,7 +28,7 @@ export const Section = () => {
           <div key={index} className="section-image-container">
             <img
               src={img.src}
-              alt={`Craft Image ${index + 1}`}
+              alt={img.text}  
               className="section-image"
             />
             <div className="section-overlay">
@@ -41,4 +40,5 @@ export const Section = () => {
     </div>
   );
 };
+
 export default Section;
